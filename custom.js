@@ -37,6 +37,9 @@ const txtKeyUpHandler = (evt) => {
                     app.isLastElemRemove = false;
                     txtChangeHandler(evt);
                     break;
+                case keycode === 27 :
+                    clickOutside()
+                    break;
                 case evt.type === "paste":
                     createSuggList(app.filterCountry(evt.target.value));
                     break;
